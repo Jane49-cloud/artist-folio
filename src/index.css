@@ -11,6 +11,7 @@
   font-family: "Bellota", cursive;
   font-family: "Mukta", sans-serif;
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 .hash-span {
@@ -41,4 +42,14 @@
   height: 2px;
   background-color: orange; /* You can change this color to your desired color */
   margin-top: 5px; /* Adjust this value to control the distance between the link text and the underline */
+}
+
+.active::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 2px;
+  background-color: orange; /* You can change this color to your desired color */
+  margin-top: 4px;
+  margin-right: 5px;
 }
