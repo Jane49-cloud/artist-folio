@@ -1,15 +1,18 @@
 import "./App.css";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 
 function App() {
   return (
     <HashRouter>
-      <div className="relative  bg-primary w-full">
-        <div className="bg-hero-pattern bng-contain bg-no-repeat bg-center">
+      <div>
+        <div>
+          {" "}
           <Navbar />
-          <Hero />
+          <div className="mt-18">
+            <Hero />
+          </div>
         </div>
       </div>
     </HashRouter>

@@ -16,20 +16,21 @@ module.exports = {
           light: "#FFC04D",
           dark: "#CC7A00",
         },
-        primary: "#050816",
         // Gray colors
         gray: {
           DEFAULT: "#808080",
           lighter: "#C0C0C0",
           dark: "#404040",
         },
-
-        boxShadow: {
-          card: "0px 35px 120px -15px #211e35",
-        },
-        screens: {
-          xs: "450px",
-        },
+      },
+      boxShadow: {
+        card: "0px 35px 120px -15px #211e35",
+      },
+      screens: {
+        xs: "450px",
+      },
+      backgroundImage: {
+        "hero-pattern": "url('/src/assets/pic.png')",
       },
     },
   },

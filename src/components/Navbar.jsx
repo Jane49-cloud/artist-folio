@@ -34,8 +34,9 @@ const Navbar = () => {
       } w-full flex items-center py-3  fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       } `}
+      style={{ transition: "all 0.5s ease", backgroundColor: "black" }}
     >
-      <div className="w-full flex justify-around items-center max-w-7xl mx-auto pr-3">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto pr-3">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -56,13 +57,13 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10 ">
+        <ul className="list-none hidden sm:flex flex-row gap-10  text-white">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title
-                  ? "text-white active-link"
+                  ? "text-orange-700 active-link"
                   : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
