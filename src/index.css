@@ -48,6 +48,7 @@
   content: "";
   display: block;
   width: 20%;
+  min-width: 150px;
   height: 2px;
   background-color: orange; /* You can change this color to your desired color */
   margin-top: 4px;

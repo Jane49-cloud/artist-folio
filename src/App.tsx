@@ -3,6 +3,7 @@ import { BrowserRouter, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Events from "./components/Events";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </div>
           <div className="mt-18">
             <About />
+          </div>
+          <div className="mt-18">
+            <Events />
           </div>
         </div>
       </div>
